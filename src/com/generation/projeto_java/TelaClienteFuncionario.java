@@ -107,7 +107,7 @@ public class TelaClienteFuncionario {
 									int numSerie = sc.nextInt();
 									System.out.println("EXEMPLAR ATUALIZADO!!!");
 									
-								
+									estoque.add(i, new Livro(produto, numSerie));	
 									estoque.set(i, new Livro(produto, numSerie));			
 								} 
 								
