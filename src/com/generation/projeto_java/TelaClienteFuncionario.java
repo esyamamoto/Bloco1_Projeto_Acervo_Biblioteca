@@ -8,13 +8,15 @@ public class TelaClienteFuncionario {
 	
 	public static void main(String[] args) {
 		
-		
+
 		Scanner sc = new Scanner(System.in);
 		
+			
 			ArrayList<Livro> estoque = new ArrayList<>();
 			Livro titulo = new Livro(null, 0);
 			
 			int press = -1;
+			
 			
 			estoque.add(new Livro("Pai Rico, Pai Pobre", 01));
 			estoque.add(new Livro("Os Segredos da Mente Milionária", 02));
@@ -36,11 +38,11 @@ public class TelaClienteFuncionario {
 			estoque.add(new Livro(" Vade Mecum Exame De Ordem", 19));
 			estoque.add(new Livro("O Caso Dos Exploradores De Cavernas", 20));
 			estoque.add(new Livro("Direito Civil Brasileiro - Parte Geral", 21));
-			estoque.add(new Livro("BOX Pokémon: Ruby & Sapphire", 22));
-			estoque.add(new Livro("BOX Shingeki no Kyojin", 23));
-			estoque.add(new Livro("BOX TEX", 24));
-			estoque.add(new Livro("BOX Citrus", 25));
-			estoque.add(new Livro("BOX Naruto", 26));
+			estoque.add(new Livro("Coleção Pokémon: Ruby & Sapphire", 22));
+			estoque.add(new Livro("Coleção Shingeki no Kyojin", 23));
+			estoque.add(new Livro("Coleção TEX", 24));
+			estoque.add(new Livro("Coleção Citrus", 25));
+			estoque.add(new Livro("Coleção Naruto", 26));
 			estoque.add(new Livro("Arsène Lupin, O Ladrão De Casaca", 27 ));
 			estoque.add(new Livro("O Tatuador De Auschwitz - Baseado Na História", 28));
 			estoque.add(new Livro("Admirável Mundo Novo", 29));
@@ -56,15 +58,22 @@ public class TelaClienteFuncionario {
 			estoque.add(new Livro("Grande Sertão - Veredas", 39));
 			estoque.add(new Livro("Textos Cruéis Demais Para Serem Lidos", 40));
 			
-			
+				
 				titulo.titulo();
 			
-									
+				
 				while(press !=0) {
-								
-				System.out.println("VOCÊ ESTÁ REALIZANDO:\n\n[1]DEVOLUÇÃO DO EXEMPLAR \n[2]RETIRADA DO EXEMPLAR \n[3]ATUALIZAR O EXEMPLAR \n[4]MOSTRAR O ESTOQUE \n[0]SAIR" );
+					
+					
+				System.out.println("VOCÊ ESTÁ REALIZANDO:"
+						+ "\n\n[1]DEVOLUÇÃO DO EXEMPLAR "
+						+ "\n[2]RETIRADA DO EXEMPLAR "
+						+ "\n[3]ATUALIZAR O EXEMPLAR "
+						+ "\n[4]MOSTRAR O ESTOQUE "
+						+ "\n[0]SAIR" );
 							press = sc.nextInt();
 							sc.nextLine();
+						
 								if (press == 1) {
 									
 									System.out.println("Insira o nome do exemplar: ");			
@@ -73,7 +82,7 @@ public class TelaClienteFuncionario {
 									System.out.println("Insira o nº de série do exemplar");
 									int numSerie = sc.nextInt();
 									System.out.println("EXEMPLAR DEVOLVIDO!!!");
-								
+									
 									estoque.add(new Livro(produto, numSerie));
 									} 
 							
@@ -81,9 +90,10 @@ public class TelaClienteFuncionario {
 									System.out.println("Digite o número do exemplar que deseja retirar: ");
 									int i = sc.nextInt();
 									System.out.println("EXEMPLAR RETIRADO!!!");
+									
 									estoque.remove(i);
 								
-									} 
+																} 
 							
 								else if (press == 3) {
 									System.out.println("Digite o número do exemplar que deseja atualizar: ");
@@ -96,16 +106,18 @@ public class TelaClienteFuncionario {
 									System.out.println("Insira o nº de série do exemplar: ");
 									int numSerie = sc.nextInt();
 									System.out.println("EXEMPLAR ATUALIZADO!!!");
+									
 								
 									estoque.set(i, new Livro(produto, numSerie));			
 								} 
 								
+							
 								else if (press == 4) {	
 									System.out.println("EXEMPLARES NO ESTOQUE: ");
 								
 									}
 
-							
+						
 								else {
 								System.out.println("FECHANDO O PROGRAMA!!! \n\n ESTOQUE DE TODOS OS EXEMPLARES:");
 								}
@@ -116,11 +128,7 @@ public class TelaClienteFuncionario {
 								}
 							}
 							sc.close();
-						
-			
-		
-
-	
+					
 
 }
 
