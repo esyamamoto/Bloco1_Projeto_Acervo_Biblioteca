@@ -10,7 +10,17 @@ public class Livro extends Exemplar{
 	
 	@Override
 	public void titulo() {
-		System.out.println("Você é Funcionário da Biblioteca País das Maravilhas ");
+		System.out.println(" ----------------------------------------------------------");
+		System.out.println("|                                                          |");
+		System.out.println("|   VocÃª Ã© FuncionÃ¡rio da Biblioteca PaÃ­s das Maravilhas   |");
+		System.out.println("|                   _________ _________                    |");
+		System.out.println("|                  {          |         }                  |");
+		System.out.println("|                  {          |         }                  |");
+		System.out.println("|                  {   BEM    |  VINDO  }                  |");
+		System.out.println("|                  {          |         }                  |");
+		System.out.println("|                  {          |         }                  |");
+		System.out.println("|                  { _________|_________}                  |");
+		System.out.println("|                                                          |");
+		System.out.println(" ----------------------------------------------------------");
 	}
-
 }
