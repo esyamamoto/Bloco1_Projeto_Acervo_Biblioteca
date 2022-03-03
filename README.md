@@ -12,3 +12,6 @@ Neste projeto, utilizamos os seguintes conceitos:
 - Encapsulamento e Herança
 - Polimorfismo, Sobrecarga e Sobrescrita
 - Collections
+
+<h4 align="center">
+<img align="center" alt="projeto" src="https://i.imgur.com/auPe1iX.png"> 
